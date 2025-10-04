@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kuis Bahasa Indonesia</title>
+  <style>
+    body {font-family: Arial, sans-serif; margin: 20px; line-height: 1.6;}
+    h1 {text-align: center;}
+    .soal {margin-bottom: 15px; padding: 10px; border: 1px solid #ccc; border-radius: 8px;}
+    .soal h3 {margin: 0 0 10px 0;}
+    button {margin-top: 20px; padding: 10px 20px;}
+    .hasil {margin-top: 20px; font-weight: bold;}
+  </style>
+</head>
+<body>
+  <h1>Kuis Online Bahasa Indonesia</h1>
+  <form id="kuis">
+    <h2>Soal Pilihan Ganda (1–40)</h2>
+
+    <!-- Contoh soal awal -->
+    <div class="soal">
+      <h3>1. Kalimat tunggal adalah kalimat yang memiliki...</h3>
+      <label><input type="radio" name="q1" value="A"> Banyak pola kalimat</label><br>
+      <label><input type="radio" name="q1" value="B"> Satu pola kalimat</label><br>
+      <label><input type="radio" name="q1" value="C"> Dua pola kalimat</label>
+    </div>
+
+    <div class="soal">
+      <h3>2. Kata "rumah" termasuk kata...</h3>
+      <label><input type="radio" name="q2" value="A"> Kata tunggal</label><br>
+      <label><input type="radio" name="q2" value="B"> Kata ulang</label><br>
+      <label><input type="radio" name="q2" value="C"> Kata berimbuhan</label>
+    </div>
+    
+    <div class="soal"><h3>3. Subjek dalam kalimat adalah...</h3>
+
+      <label><input type="radio" name="q3" value="A"> Pelaku dalam kalimat</label><br>
+
+      <label><input type="radio" name="q3" value="B"> Kata kerja</label><br>
+
+      <label><input type="radio" name="q3" value="C"> Keterangan waktu</label>
+
+    </div>
+
+
+    <div class="soal"><h3>4. Predikat biasanya berupa...</h3>
+
+      <label><input type="radio" name="q4" value="A"> Kata benda</label><br>
+
+      <label><input type="radio" name="q4" value="B"> Kata kerja</label><br>
+
+      <label><input type="radio" name="q4" value="C"> Kata sifat</label>
+
+    </div>
+
+
+    <div class="soal"><h3>5. Objek dalam kalimat biasanya menjawab pertanyaan...</h3>
+
+      <label><input type="radio" name="q5" value="A"> Apa/siapa</label><br>
+
+      <label><input type="radio" name="q5" value="B"> Kapan</label><br>
+
+      <label><input type="radio" name="q5" value="C"> Di mana</label>
+
+    </div>
+
+
+    <div class="soal"><h3>6. Keterangan dalam kalimat dapat berupa...</h3>
+
+      <label><input type="radio" name="q6" value="A"> Waktu dan tempat</label><br>
+
+      <label><input type="radio" name="q6" value="B"> Subjek</label><br>
+
+      <label><input type="radio" name="q6" value="C"> Predikat</label>
+
+    </div>
+
+
+    <div class="soal"><h3>7. Kata yang tidak berimbuhan dan tidak diulang disebut...</h3>
+
+      <label><input type="radio" name="q7" value="A"> Kata majemuk</label><br>
+
+      <label><input type="radio" name="q7" value="B"> Kata ulang</label><br>
+
+      <label><input type="radio" name="q7" value="C"> Kata tunggal</label>
+
+    </div>
+
+
+    <div class="soal"><h3>8. Penggunaan huruf kapital yang benar terdapat pada kalimat...</h3>
+
+      <label><input type="radio" name="q8" value="A"> saya pergi ke bandung</label><br>
+
+      <label><input type="radio" name="q8" value="B"> Saya pergi ke Bandung</label><br>
+
+      <label><input type="radio" name="q8" value="C"> saya Pergi Ke bandung</label>
+
+    </div>
+
+
+    <div class="soal"><h3>9. Tanda baca untuk akhir kalimat tanya adalah...</h3>
+
+      <label><input type="radio" name="q9" value="A"> .</label><br>
+
+      <label><input type="radio" name="q9" value="B"> !</label><br>
+
+      <label><input type="radio" name="q9" value="C"> ?</label>
+
+    </div>
+
+
+    <div class="soal"><h3>10. Tanda baca untuk akhir kalimat berita adalah...</h3>
+
+      <label><input type="radio" name="q10" value="A"> ?</label><br>
+
+      <label><input type="radio" name="q10" value="B"> .</label><br>
+
+      <label><input type="radio" name="q10" value="C"> !</label>
+
+    </div>
+
+
+    <div class="soal"><h3>11. Kalimat "Ani membaca buku di perpustakaan" subjeknya adalah...</h3>
+
+      <label><input type="radio" name="q11" value="A"> Ani</label><br>
+
+      <label><input type="radio" name="q11" value="B"> membaca</label><br>
+
+      <label><input type="radio" name="q11" value="C"> buku</label>
+
+    </div>
+
+
+    <div class="soal"><h3>12. Kalimat "Ibu memasak nasi" predikatnya adalah...</h3>
+
+      <label><input type="radio" name="q12" value="A"> Ibu</label><br>
+
+      <label><input type="radio" name="q12" value="B"> memasak</label><br>
+
+      <label><input type="radio" name="q12" value="C"> nasi</label>
+
+    </div>
+
+
+    <div class="soal"><h3>13. Kalimat "Ayah membaca koran pagi hari" objeknya adalah...</h3>
+
+      <label><input type="radio" name="q13" value="A"> Ayah</label><br>
+
+      <label><input type="radio" name="q13" value="B"> membaca</label><br>
+
+      <label><input type="radio" name="q13" value="C"> koran</label>
+
+    </div>
+
+
+    <div class="soal"><h3>14. Huruf kapital digunakan untuk menulis...</h3>
+
+      <label><input type="radio" name="q14" value="A"> Nama orang</label><br>
+
+      <label><input type="radio" name="q14" value="B"> Kata kerja</label><br>
+
+      <label><input type="radio" name="q14" value="C"> Kata ganti</label>
+
+    </div>
+
+
+    <div class="soal"><h3>15. Tanda baca yang digunakan setelah kata seru "Wah" adalah...</h3>
+
+      <label><input type="radio" name="q15" value="A"> ,</label><br>
+
+      <label><input type="radio" name="q15" value="B"> .</label><br>
+
+      <label><input type="radio" name="q15" value="C"> !</label>
+
+    </div>
+
+
+    <div class="soal"><h3>16. Kalimat perintah diakhiri dengan tanda...</h3>
+
+      <label><input type="radio" name="q16" value="A"> .</label><br>
+
+      <label><input type="radio" name="q16" value="B"> !</label><br>
+
+      <label><input type="radio" name="q16" value="C"> ?</label>
+
+    </div>
+
+
+    <div class="soal"><h3>17. Cerita fiksi termasuk cerita yang bersifat...</h3>
+
+      <label><input type="radio" name="q17" value="A"> Nyata</label><br>
+
+      <label><input type="radio" name="q17" value="B"> Khayalan</label><br>
+
+      <label><input type="radio" name="q17" value="C"> Fakta</label>
+
+    </div>
+
+
+    <div class="soal"><h3>18. Contoh cerita fiksi adalah...</h3>
+
+      <label><input type="radio" name="q18" value="A"> Dongeng</label><br>
+
+      <label><input type="radio" name="q18" value="B"> Berita</label><br>
+
+      <label><input type="radio" name="q18" value="C"> Artikel ilmiah</label>
+
+    </div>
+
+
+    <div class="soal"><h3>19. Fakta adalah sesuatu yang...</h3>
+
+      <label><input type="radio" name="q19" value="A"> Khayalan</label><br>
+
+      <label><input type="radio" name="q19" value="B"> Benar-benar terjadi</label><br>
+
+      <label><input type="radio" name="q19" value="C"> Cerita fiksi</label>
+
+    </div>
+
+
+    <div class="soal"><h3>20. Alur adalah rangkaian...</h3>
+
+      <label><input type="radio" name="q20" value="A"> Kata</label><br>
+
+      <label><input type="radio" name="q20" value="B"> Kejadian</label><br>
+
+      <label><input type="radio" name="q20" value="C"> Paragraf</label>
+
+    </div>
+
+
+    <div class="soal"><h3>21. Awal cerita berisi pengenalan...</h3>
+
+      <label><input type="radio" name="q21" value="A"> Tokoh, tempat, waktu</label><br>
+
+      <label><input type="radio" name="q21" value="B"> Konflik</label><br>
+
+      <label><input type="radio" name="q21" value="C"> Penyelesaian</label>
+
+    </div>
+
+
+    <div class="soal"><h3>22. Tengah cerita biasanya berisi...</h3>
+
+      <label><input type="radio" name="q22" value="A"> Pengenalan</label><br>
+
+      <label><input type="radio" name="q22" value="B"> Masalah/konflik</label><br>
+
+      <label><input type="radio" name="q22" value="C"> Penutup</label>
+
+    </div>
+
+
+    <div class="soal"><h3>23. Akhir cerita biasanya berisi...</h3>
+
+      <label><input type="radio" name="q23" value="A"> Konflik</label><br>
+
+      <label><input type="radio" name="q23" value="B"> Penyelesaian masalah</label><br>
+
+      <label><input type="radio" name="q23" value="C"> Pengenalan tokoh</label>
+
+    </div>
+
+
+    <div class="soal"><h3>24. Cerita nonfiksi berdasarkan...</h3>
+
+      <label><input type="radio" name="q24" value="A"> Khayalan</label><br>
+
+      <label><input type="radio" name="q24" value="B"> Fakta</label><br>
+
+      <label><input type="radio" name="q24" value="C"> Imajinasi</label>
+
+    </div>
+
+
+    <div class="soal"><h3>25. Tanda koma digunakan setelah kata seru...</h3>
+
+      <label><input type="radio" name="q25" value="A"> ayo, mari, wah</label><br>
+
+      <label><input type="radio" name="q25" value="B"> cepat</label><br>
+
+      <label><input type="radio" name="q25" value="C"> sungguh</label>
+
+    </div>
+
+
+    <div class="soal"><h3>26. Kalimat "Budi bermain bola di lapangan" predikatnya adalah...</h3>
+
+      <label><input type="radio" name="q26" value="A"> Budi</label><br>
+
+      <label><input type="radio" name="q26" value="B"> bermain</label><br>
+
+      <label><input type="radio" name="q26" value="C"> bola</label>
+
+    </div>
+
+
+    <div class="soal"><h3>27. Kalimat "Ibu membeli sayur di pasar" objeknya adalah...</h3>
+
+      <label><input type="radio" name="q27" value="A"> Ibu</label><br>
+
+      <label><input type="radio" name="q27" value="B"> membeli</label><br>
+
+      <label><input type="radio" name="q27" value="C"> sayur</label>
+
+    </div>
+
+
+    <div class="soal"><h3>28. Kalimat "Adi tidur di kamar" keterangannya adalah...</h3>
+
+      <label><input type="radio" name="q28" value="A"> tidur</label><br>
+
+      <label><input type="radio" name="q28" value="B"> di kamar</label><br>
+
+      <label><input type="radio" name="q28" value="C"> Adi</label>
+
+    </div>
+
+
+    <div class="soal"><h3>29. Kata dasar dari kata "bermain" adalah...</h3>
+
+      <label><input type="radio" name="q29" value="A"> main</label><br>
+
+      <label><input type="radio" name="q29" value="B"> bermain</label><br>
+
+      <label><input type="radio" name="q29" value="C"> bermain-main</label>
+
+    </div>
+
+
+    <div class="soal"><h3>30. Kata ulang dari kata "anak" adalah...</h3>
+
+      <label><input type="radio" name="q30" value="A"> anak</label><br>
+
+      <label><input type="radio" name="q30" value="B"> anak-anak</label><br>
+
+      <label><input type="radio" name="q30" value="C"> keanak</label>
+
+    </div>
+
+
+    <div class="soal"><h3>31. Huruf kapital digunakan pada penulisan...</h3>
+
+      <label><input type="radio" name="q31" value="A"> Awal kalimat</label><br>
+
+      <label><input type="radio" name="q31" value="B"> Akhir kalimat</label><br>
+
+      <label><input type="radio" name="q31" value="C"> Kata kerja</label>
+
+    </div>
+
+
+    <div class="soal"><h3>32. Nama kota ditulis dengan huruf...</h3>
+
+      <label><input type="radio" name="q32" value="A"> kecil</label><br>
+
+      <label><input type="radio" name="q32" value="B"> kapital</label><br>
+
+      <label><input type="radio" name="q32" value="C"> miring</label>
+
+    </div>
+
+
+    <div class="soal"><h3>33. Kalimat seru diakhiri dengan tanda...</h3>
+
+      <label><input type="radio" name="q33" value="A"> !</label><br>
+
+      <label><input type="radio" name="q33" value="B"> .</label><br>
+
+      <label><input type="radio" name="q33" value="C"> ?</label>
+
+    </div>
+
+
+    <div class="soal"><h3>34. Cerita dibagi menjadi...</h3>
+
+      <label><input type="radio" name="q34" value="A"> Awal, tengah, akhir</label><br>
+
+      <label><input type="radio" name="q34" value="B"> Tengah dan akhir</label><br>
+
+      <label><input type="radio" name="q34" value="C"> Judul dan isi</label>
+
+    </div>
+
+
+    <div class="soal"><h3>35. Contoh kalimat berita adalah...</h3>
+
+      <label><input type="radio" name="q35" value="A"> Siapa namamu?</label><br>
+
+      <label><input type="radio" name="q35" value="B"> Hari ini cuaca cerah.</label><br>
+
+      <label><input type="radio" name="q35" value="C"> Ayo kita belajar
+
+
+ <div class="soal"><h3>36. Urutan menulis cerita yang tepat adalah...</h3>
+
+      <label><input type="radio" name="q36" value="A"> Awal - Tengah - Akhir</label><br>
+
+      <label><input type="radio" name="q36" value="B"> Tengah - Akhir - Awal</label><br>
+
+      <label><input type="radio" name="q36" value="C"> Akhir - Awal - Tengah</label>
+
+    </div>
+
+
+    <div class="soal">
+
+      <h3>37. Isi awal cerita biasanya berisi...</h3>
+
+      <label><input type="radio" name="q37" value="A"> Klimaks cerita</label><br>
+
+      <label><input type="radio" name="q37" value="B"> Pengenalan tokoh, tempat, dan waktu</label><br>
+
+      <label><input type="radio" name="q37" value="C"> Akhir cerita</label>
+
+    </div>
+
+
+    <div class="soal">
+
+      <h3>38. Fakta adalah sesuatu yang...</h3>
+
+      <label><input type="radio" name="q38" value="A"> Tidak pernah terjadi</label><br>
+
+      <label><input type="radio" name="q38" value="B"> Benar-benar terjadi</label><br>
+
+      <label><input type="radio" name="q38" value="C"> Hanya khayalan</label>
+
+    </div>
+
+
+    <div class="soal">
+
+      <h3>39. Fiksi adalah cerita yang...</h3>
+
+      <label><input type="radio" name="q39" value="A"> Berdasarkan kenyataan</label><br>
+
+      <label><input type="radio" name="q39" value="B"> Tidak berdasarkan kenyataan</label><br>
+
+      <label><input type="radio" name="q39" value="C"> Catatan peristiwa nyata</label>
+
+    </div>
+
+
+    <div class="soal">
+
+      <h3>40. Contoh cerita fiksi adalah...</h3>
+
+      <label><input type="radio" name="q40" value="A"> Legenda Malin Kundang</label><br>
+
+      <label><input type="radio" name="q40" value="B"> Proklamasi Kemerdekaan</label><br>
+
+      <label><input type="radio" name="q40" value="C"> Peristiwa Sumpah Pemuda</label>
+
+    </div>
+
+
+
+
+    <!-- Soal 3–40 dibuat sesuai kisi-kisi (sudah tersimpan pada versi sebelumnya) -->
+
+    <h2>Soal Isian Singkat (41–55)</h2>
+    <div class="soal">
+      <h3>41. Tanda baca untuk akhir kalimat tanya adalah ....</h3>
+      <input type="text" name="q41">
+    </div>
+
+    <div class="soal">
+      <h3>42. Fakta adalah sesuatu yang benar-benar ....</h3>
+      <input type="text" name="q42">
+    </div>
+
+    <div class="soal">
+      <h3>43. Fiksi adalah cerita yang dibuat berdasarkan ....</h3>
+      <input type="text" name="q43">
+    </div>
+
+    <div class="soal">
+      <h3>44. Huruf pertama pada nama orang harus ditulis dengan huruf ....</h3>
+      <input type="text" name="q44">
+    </div>
+
+    <div class="soal">
+      <h3>45. Subjek dalam kalimat biasanya berupa ....</h3>
+      <input type="text" name="q45">
+    </div>
+
+    <div class="soal">
+      <h3>46. Tanda baca untuk akhir kalimat berita adalah ....</h3>
+      <input type="text" name="q46">
+    </div>
+
+    <div class="soal">
+      <h3>47. Tokoh, tempat, dan waktu termasuk bagian cerita yang disebut ....</h3>
+      <input type="text" name="q47">
+    </div>
+
+    <div class="soal">
+      <h3>48. Alur adalah rangkaian .... dalam cerita.</h3>
+      <input type="text" name="q48">
+    </div>
+
+    <div class="soal">
+      <h3>49. Kata asli yang tidak mendapat imbuhan disebut kata ....</h3>
+      <input type="text" name="q49">
+    </div>
+
+    <div class="soal">
+      <h3>50. Kalimat perintah diakhiri dengan tanda baca ....</h3>
+      <input type="text" name="q50">
+    </div>
+
+    <div class="soal">
+      <h3>51. Nama kota ditulis dengan huruf ....</h3>
+      <input type="text" name="q51">
+    </div>
+
+    <div class="soal">
+      <h3>52. "Wah, indah sekali!" tanda baca koma dipakai setelah kata ....</h3>
+      <input type="text" name="q52">
+    </div>
+
+    <div class="soal">
+      <h3>53. Predikat dalam kalimat biasanya berupa ....</h3>
+      <input type="text" name="q53">
+    </div>
+
+    <div class="soal">
+      <h3>54. Obyek dalam kalimat biasanya menjawab pertanyaan ....</h3>
+      <input type="text" name="q54">
+    </div>
+
+    <div class="soal">
+      <h3>55. Contoh cerita fiksi adalah cerita rakyat ....</h3>
+      <input type="text" name="q55">
+    </div>
+
+    <button type="button" onclick="periksaKuis()">Periksa Jawaban</button>
+  </form>
+
+  <div class="hasil" id="hasil"></div>
+
+  <script>
+    const kunci = {
+      // Soal Pilihan Ganda 1–35
+      q1: "B", q2: "A", q3: "C", q4: "A", q5: "C", q6: "A", q7: "B", q8: "C", q9: "A", q10: "B",
+      q11: "A", q12: "B", q13: "C", q14: "A", q15: "B", q16: "C", q17: "A", q18: "B", q19: "C", q20: "A",
+      q21: "B", q22: "C", q23: "A", q24: "B", q25: "C", q26: "A", q27: "B", q28: "C", q29: "A", q30: "B",
+      q31: "C", q32: "A", q33: "B", q34: "C", q35: "A",
+      // Soal 36–40
+      q36: "A", q37: "B", q38: "B", q39: "B", q40: "A",
+      // Soal Isian 41–55
+      q41: "?", q42: "terjadi", q43: "khayalan", q44: "kapital", q45: "kata benda", q46: ".", q47: "pengenalan",
+      q48: "kejadian", q49: "tunggal", q50: "!", q51: "kapital", q52: "seru", q53: "kata kerja", q54: "apa", q55: "malin kundang"
+    };
+ function periksaKuis() {
+  let skor = 0;
+  let total = Object.keys(kunci).length;
+  const form = document.forms["kuis"];
+
+  // hapus feedback lama
+  document.querySelectorAll(".feedback").forEach(el => el.remove());
+
+  for (let no in kunci) {
+    let elemenInput = document.querySelector('[name="' + no + '"]');
+    if (!elemenInput) continue; // skip jika input tidak ditemukan
+    let elemenSoal = elemenInput.closest(".soal");
+    let jawaban = "";
+
+    // cek tipe input: radio atau text
+    if (elemenInput.type === "radio") {
+      // ambil nilai radio yang dipilih
+      let radios = form[no];
+      for (let r of radios) {
+        if (r.checked) {
+          jawaban = r.value;
+          break;
+        }
+      }
+    } else {
+      // isian teks
+      jawaban = form[no].value.trim();
+    }
+
+    // buat elemen feedback
+    let feedback = document.createElement("div");
+    feedback.classList.add("feedback");
+    feedback.style.marginTop = "5px";
+
+    if (jawaban.toLowerCase() === kunci[no].toLowerCase()) {
+      skor++;
+      feedback.textContent = "✅ Benar";
+      feedback.style.color = "green";
+    } else {
+      feedback.textContent = "❌ Salah (jawaban benar: " + kunci[no] + ")";
+      feedback.style.color = "red";
+    }
+
+    elemenSoal.appendChild(feedback);
+  }
+
+  document.getElementById("hasil").innerText =
+    "Skor Anda: " + skor + " dari " + total;
+}
+
+</script>
+</body>
+</html>
